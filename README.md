@@ -8,31 +8,45 @@ Trata-se de um sistema bastante simples que demonstra a simulação do funcionam
 
 ``` mermaid
 classDiagram
-  class Formacao {
-    nome: String
-    nivel: String
-    conteudosEducacionais: List<ConteudoEducacional>
-    matricularAluno(aluno: Aluno): void
+  class User {
+    +name: String
+    +cpf: String
+    +zipCode: String
+    +email: String
+    +password: String
+    +completedContents: MutableList<EducationalContent>
+
+    +init()
+    +getPassword(): String
+    +setPassword(newPassword: String)
+    +markContentAsCompleted(content: EducationalContent)
   }
 
-  class ConteudoEducacional {
-    titulo: String
-    descricao: String
+  class EducationalContent {
+    +name: String
+    +level: Level
+    +duration: Int
   }
 
-  class Aluno {
-    nome: String
+  class Formation {
+    +name: String
+    +contents: MutableList<EducationalContent>
+    +registeredUsers: MutableList<User>
+
+    +addContent(newContent: EducationalContent)
+    +enroll(user: User)
   }
 
-  Formacao *-- ConteudoEducacional
-  Formacao *-- Aluno
+  User -- EducationalContent : completes
+  User -- Formation : enrolls
+  Formation -- EducationalContent : includes
 ```
 
 ## Tech Stack
 
 **Linguagem:** Kotlin
 
-**Made with:** IntelliJ Community Edition
+**Made with:** Kotlin Playground, chatGPT
 
 
 ## 🚀 About Me
