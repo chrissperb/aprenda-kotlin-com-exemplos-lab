@@ -1,6 +1,6 @@
 # Aprenda Kotlin Com Exemplos: Desafio de Projeto (Lab)
 
-Este repositório faze parte do Desafio para teste de conteúdo técnico sobre a linguagem Kotlin trabalhada no Bootcamp Desenvolvimento Backend com Kotlin, promovido pelas gigantes [DIO](https://web.dio.me) e [NTT Data](https://br.nttdata.com/).
+Este repositório faze parte do Desafio para teste de conteúdo técnico sobre a linguagem Kotlin trabalhada no Bootcamp Desenvolvimento Backend com Kotlin, promovido pelas gigantes [@Dio.me](https://www.github.com/digitalinnovationone) e [NTT Data](https://br.nttdata.com/).
 
 Trata-se de um sistema bastante simples que demonstra a simulação do funcionamento básico de uma plataforma educacional a exemplo da DIO.
 
